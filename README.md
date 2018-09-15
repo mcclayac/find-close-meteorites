@@ -13,3 +13,11 @@ Changes Made on my Surface
 these are changes I am making 8-14-2018
 making more changes t the readme file
 
+
+First install pipenv, Than
+
+'''
+pipenv install 
+pipenv run "python find_meteors.py"
+'''
+
