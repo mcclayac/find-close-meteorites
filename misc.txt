@@ -1,0 +1,31 @@
+
+
+pip freeze > requirements.txt
+
+
+
+
+
+FROM python:3
+COPY requirements.txt .
+RUN pip install -r requirements.txt
+
+
+
+FROM ubuntu:16.04
+RUN apt-get update
+
+RUN apt-get install -y curl
+RUN apt-get install -y python
+RUN pip install -r requirements.txt
+LABEL author="mcclayac"
+LABEL description="An example Dockerfile"
+CMD echo Hello World!
+
+# COPY hello-world.py
+COPY hello-world.py .
+WORKDIR /meteors
+COPY meteors/find_meteors.py .
+#CMD python hello-world.py
+CMD python find_meteors.py
+# CMD python hello-world.py
