@@ -29,3 +29,8 @@ COPY meteors/find_meteors.py .
 #CMD python hello-world.py
 CMD python find_meteors.py
 # CMD python hello-world.py
+
+docker build .
+docker build https://github.com/mcclayac/find-close-meteorites.git
+
+
