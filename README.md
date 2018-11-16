@@ -14,11 +14,13 @@ these are changes I am making 8-14-2018
 making more changes t the readme file
 
 
-First install pipenv, Than
+First install pipenv, 
 
 '''
 pipenv install 
 '''
 pipenv run python meteors/find_meteors.py
+
+
  
  

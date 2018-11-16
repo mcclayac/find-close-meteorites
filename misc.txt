@@ -30,7 +30,8 @@ COPY meteors/find_meteors.py .
 CMD python find_meteors.py
 # CMD python hello-world.py
 
-docker build .
-docker build https://github.com/mcclayac/find-close-meteorites.git
+docker build .docker -v
+
+docker image build -t findmeteors https://github.com/mcclayac/find-close-meteorites.git
 
 

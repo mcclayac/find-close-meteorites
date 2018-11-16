@@ -36,6 +36,10 @@ if __name__ == '__main__':
     print(meteor_data[0:10])
     print("Tony McClay's surface")
     print("Tony MacBook ")
+    print("This is from a docker image")
+    print("Adding a version 1.0 tag")
+    print ("adding tags")
+
 
 
 
